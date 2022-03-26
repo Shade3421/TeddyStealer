@@ -74,5 +74,5 @@ except FileNotFoundError:
         pass
 
 print(f"\nFile created as {fileName}.exe\n")
-input(f'[>>>] Enter anything to continue . . .  ')
+input(f'Enter anything to continue . . .  ')
 endHandler()
