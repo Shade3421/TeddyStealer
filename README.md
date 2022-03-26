@@ -1,0 +1,2 @@
+# TeddyStealer
+Discord token stealer
