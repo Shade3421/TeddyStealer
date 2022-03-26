@@ -2,3 +2,5 @@ uuid
 requests
 colorama
 discord
+shutil
+pyinstaller
