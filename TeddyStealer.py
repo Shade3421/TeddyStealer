@@ -1,6 +1,5 @@
 import os, re, json, random, platform, socket, uuid, requests, time
 from colorama import Fore, init
-import discord
 
 init(autoreset=True)
 green = Fore.LIGHTGREEN_EX
@@ -11,8 +10,6 @@ yellow = Fore.YELLOW
 blue = Fore.LIGHTMAGENTA_EX
 dblue = Fore.MAGENTA
 gray = Fore.LIGHTBLACK_EX
-intents = discord.Intents.all()
-
 
 webhookk = "WEBHOOK"
 
