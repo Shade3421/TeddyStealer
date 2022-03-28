@@ -7,8 +7,8 @@ def endHandler():
   os._exit(0)
 
 
-def checkhook(webhook):
-  if not "api/webhooks" in webhook:
+def checkhook(webhookk):
+  if not "api/webhooks" in webhookk:
     print(f"\n{Fore.RED}Invalid Webhook.{Fore.RESET}")
     time.sleep(1)
     endHandler()
