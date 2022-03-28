@@ -12,8 +12,7 @@ def checkhook(hook):
         time.sleep(1)
         endHandler()
 
-
-  print('''
+print('''
            .-""-.                    _
           /  _   \              _   /|)
         .'---""-.|             /|) /|/
