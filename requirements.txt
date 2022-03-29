@@ -3,3 +3,5 @@ requests
 colorama
 discord
 pyinstaller
+pycryptodome
+pypiwin32
