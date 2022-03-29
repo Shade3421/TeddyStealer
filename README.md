@@ -23,7 +23,7 @@ Create a discord server, make a webhook, and put the webhook into the config.
 Compile it with PyInstaller!
 **Optional:** Use PyArmor to obfuscate it!
 
-```
+---
 
 <h2>TeddyStealer looks like this when ran!</h2>
 
