@@ -30,5 +30,5 @@ Compile it with PyInstaller!
 
 ![TeddyStealer](https://user-images.githubusercontent.com/68307468/160243008-c120d316-b23e-4eb5-be67-cea5a4160ec0.png)
 
-**TeddyStealer** was made by Shade#3421, Rdimo#0190, and DeKrypt#7777 <br/>
+**TeddyStealer** was made by Shade#3421, Rdimo#6968, and DeKrypt#7777 <br/>
 🌟 **Star** this repo if you enjoy!
