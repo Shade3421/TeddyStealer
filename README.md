@@ -21,7 +21,6 @@ pip install -r requirements.txt
 Create a discord server, make a webhook, and put the webhook into the config.
 
 * **Step 4:**
-Compile it with PyInstaller!
 **Optional:** Use PyArmor to obfuscate it!
 
 ---
